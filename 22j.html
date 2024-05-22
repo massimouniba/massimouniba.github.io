@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Monday 17 June</title>
+
+<script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.33/datatables.js"></script>
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/dt-ext-rowgroup-1.13.6/css/rowGroup.dataTables.min.css" rel="stylesheet" />
+<script src="site_libs/dt-ext-rowgroup-1.13.6/js/dataTables.rowGroup.min.js"></script>
+<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">SIS 2024</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="22j.html">Mon, 17 June</a>
+</li>
+<li>
+  <a href="23j.html">Tue, 18 June</a>
+</li>
+<li>
+  <a href="24j.html">Wed, 19 June</a>
+</li>
+<li>
+  <a href="25j.html">Fri, 20 June</a>
+</li>
+<li>
+  <a href="search.html">Search</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Monday 17 June</h1>
+
+</div>
+
+
+<style type="text/css">
+  .nav-pills>li>a:hover, .nav-pills>li>a:focus, .nav-pills>li.active>a,     .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+     background-color: orchid;
+     }
+}
+</style>
+<div id="daily-program"
+class="section level1 tabset tabset-fade tabset-pills">
+<h1 class="tabset tabset-fade tabset-pills">Daily Program</h1>
+<div id="morning" class="section level2">
+<h2><b>Morning</b></h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-ded0e8fe329bbb35ad68" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-ded0e8fe329bbb35ad68">{"x":{"filter":"none","vertical":false,"extensions":["RowGroup"],"data":[[],[]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>binfo<\/th>\n          <\/tr>\n  <\/thead>\n<\/table>","options":{"rowGroup":{"dataSrc":0},"columnDefs":[{"visible":false,"targets":0},{"name":"binfo","targets":0},{"name":"Click on the session name to collapse or expand","targets":1}],"pageLength":100,"dom":"ft","order":[],"autoWidth":false,"orderClasses":false},"callback":"function(table) {\ntable.on('click', 'tr.dtrg-group', function () {\n  var rowsCollapse = $(this).nextUntil('.dtrg-group');\n  $(rowsCollapse).toggleClass('hidden');\n});\ntable.one('init', () => $('.dtrg-group').trigger('click'))\n}"},"evals":["callback"],"jsHooks":[]}</script>
+</div>
+<div id="afternoon" class="section level2">
+<h2><b>Afternoon</b></h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-2dea7d62cef33f36f386" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-2dea7d62cef33f36f386">{"x":{"filter":"none","vertical":false,"extensions":["RowGroup"],"data":[["13:30-14:30 -  Registration","14:30-15:15 - Room: Leogrande  - <br/> Opening","15:15-16:15 - Room: Leogrande - <br/> Panel discussion: Alberto Zuliani, Maurizio Vichi, Maria Letizia D’Autilia, Maria De Benedetto, Francesco Lagona","15:15-16:15 - Room: A - <br/> SPEC1 - Spatio-temporal methods for environmental sustainability Organizer: Nicoletta D’Angelo Discussant: Rosaria Ignaccolo","15:15-16:15 - Room: A - <br/> SPEC1 - Spatio-temporal methods for environmental sustainability Organizer: Nicoletta D’Angelo Discussant: Rosaria Ignaccolo","15:15-16:15 - Room: A - <br/> SPEC1 - Spatio-temporal methods for environmental sustainability Organizer: Nicoletta D’Angelo Discussant: Rosaria Ignaccolo","15:15-16:15 - Room: De Trizio - <br/> SPEC2 - Statistical approaches for analysing social data on violence against women Organizer: Cristina Mollica Discussant: Luca Tardella","15:15-16:15 - Room: De Trizio - <br/> SPEC2 - Statistical approaches for analysing social data on violence against women Organizer: Cristina Mollica Discussant: Luca Tardella","15:15-16:15 - Room: De Trizio - <br/> SPEC2 - Statistical approaches for analysing social data on violence against women Organizer: Cristina Mollica Discussant: Luca Tardella","15:15-16:15 - Room: B - <br/> SPEC3 - Job mismatch and effects on the labour market Organizer: Elena Fabrizi Discussant: Roberto Leombruni","15:15-16:15 - Room: B - <br/> SPEC3 - Job mismatch and effects on the labour market Organizer: Elena Fabrizi Discussant: Roberto Leombruni","15:15-16:15 - Room: B - <br/> SPEC3 - Job mismatch and effects on the labour market Organizer: Elena Fabrizi Discussant: Roberto Leombruni","15:15-16:15 - Room: C - <br/> SPEC4 - Harmony in measurement: bridging theory and application in Psychometrics Organizer: Enrico Ciavolino Discussant: Mario Angelelli","15:15-16:15 - Room: C - <br/> SPEC4 - Harmony in measurement: bridging theory and application in Psychometrics Organizer: Enrico Ciavolino Discussant: Mario Angelelli","15:15-16:15 - Room: C - <br/> SPEC4 - Harmony in measurement: bridging theory and application in Psychometrics Organizer: Enrico Ciavolino Discussant: Mario Angelelli","16:15-16:45 -  Coffee break","16:45-17:45 - Room: Leogrande - <br/> SOLI1 - Statistical methods for complex systems in Finance Organizer: Roy Cerqueti Chair: Roy Cerqueti","16:45-17:45 - Room: Leogrande - <br/> SOLI1 - Statistical methods for complex systems in Finance Organizer: Roy Cerqueti Chair: Roy Cerqueti","16:45-17:45 - Room: Leogrande - <br/> SOLI1 - Statistical methods for complex systems in Finance Organizer: Roy Cerqueti Chair: Roy Cerqueti","16:45-17:45 - Room: Leogrande - <br/> SOLI1 - Statistical methods for complex systems in Finance Organizer: Roy Cerqueti Chair: Roy Cerqueti","16:45-17:45 - Room: A - <br/> SOLI2 - Innovations in spatial-temporal modeling and analysis Organizer: Laura M. Sangalli Chair: Ilaria Prosdocimi","16:45-17:45 - Room: A - <br/> SOLI2 - Innovations in spatial-temporal modeling and analysis Organizer: Laura M. Sangalli Chair: Ilaria Prosdocimi","16:45-17:45 - Room: A - <br/> SOLI2 - Innovations in spatial-temporal modeling and analysis Organizer: Laura M. Sangalli Chair: Ilaria Prosdocimi","16:45-17:45 - Room: A - <br/> SOLI2 - Innovations in spatial-temporal modeling and analysis Organizer: Laura M. Sangalli Chair: Ilaria Prosdocimi","16:45-17:45 - Room: De Trizio - <br/> SOLI3 - Untangling gender imbalance: statistical perspectives Organizer: Francesco Dotto Chair: Sabrina Giordano","16:45-17:45 - Room: De Trizio - <br/> SOLI3 - Untangling gender imbalance: statistical perspectives Organizer: Francesco Dotto Chair: Sabrina Giordano","16:45-17:45 - Room: De Trizio - <br/> SOLI3 - Untangling gender imbalance: statistical perspectives Organizer: Francesco Dotto Chair: Sabrina Giordano","16:45-17:45 - Room: De Trizio - <br/> SOLI3 - Untangling gender imbalance: statistical perspectives Organizer: Francesco Dotto Chair: Sabrina Giordano","16:45-17:45 - Room: B - <br/> SOLI4 - Methods and models for transport and mobility analyses Organizer: Antonello D’Ambra Chair: Antonello D’Ambra","16:45-17:45 - Room: B - <br/> SOLI4 - Methods and models for transport and mobility analyses Organizer: Antonello D’Ambra Chair: Antonello D’Ambra","16:45-17:45 - Room: B - <br/> SOLI4 - Methods and models for transport and mobility analyses Organizer: Antonello D’Ambra Chair: Antonello D’Ambra","16:45-17:45 - Room: B - <br/> SOLI4 - Methods and models for transport and mobility analyses Organizer: Antonello D’Ambra Chair: Antonello D’Ambra","16:45-17:45 - Room: C - <br/> SOLI5 - Advances in Bayesian mixture modelling Organizer: Alessandra Guglielmi Chair: Alessandra Guglielmi","16:45-17:45 - Room: C - <br/> SOLI5 - Advances in Bayesian mixture modelling Organizer: Alessandra Guglielmi Chair: Alessandra Guglielmi","16:45-17:45 - Room: C - <br/> SOLI5 - Advances in Bayesian mixture modelling Organizer: Alessandra Guglielmi Chair: Alessandra Guglielmi","16:45-17:45 - Room: C - <br/> SOLI5 - Advances in Bayesian mixture modelling Organizer: Alessandra Guglielmi Chair: Alessandra Guglielmi","17:45-18:30 - Room: Leogrande - <br/> CONT1 - Applied Statistics - business and management Discussant: Andrea Marletta","17:45-18:30 - Room: Leogrande - <br/> CONT1 - Applied Statistics - business and management Discussant: Andrea Marletta","17:45-18:30 - Room: Leogrande - <br/> CONT1 - Applied Statistics - business and management Discussant: Andrea Marletta","17:45-18:30 - Room: Leogrande - <br/> CONT1 - Applied Statistics - business and management Discussant: Andrea Marletta","17:45-18:30 - Room: Leogrande - <br/> CONT1 - Applied Statistics - business and management Discussant: Andrea Marletta","17:45-18:30 - Room: A - <br/> CONT2 - Challenges and strategies for complex environmental data Discussant: Giada Adelfio","17:45-18:30 - Room: A - <br/> CONT2 - Challenges and strategies for complex environmental data Discussant: Giada Adelfio","17:45-18:30 - Room: A - <br/> CONT2 - Challenges and strategies for complex environmental data Discussant: Giada Adelfio","17:45-18:30 - Room: A - <br/> CONT2 - Challenges and strategies for complex environmental data Discussant: Giada Adelfio","17:45-18:30 - Room: A - <br/> CONT2 - Challenges and strategies for complex environmental data Discussant: Giada Adelfio","17:45-18:30 - Room: De Trizio - <br/> CONT3 - Family issues and childcare Discussant: Giancarlo Ragozzini","17:45-18:30 - Room: De Trizio - <br/> CONT3 - Family issues and childcare Discussant: Giancarlo Ragozzini","17:45-18:30 - Room: De Trizio - <br/> CONT3 - Family issues and childcare Discussant: Giancarlo Ragozzini","17:45-18:30 - Room: De Trizio - <br/> CONT3 - Family issues and childcare Discussant: Giancarlo Ragozzini","17:45-18:30 - Room: De Trizio - <br/> CONT3 - Family issues and childcare Discussant: Giancarlo Ragozzini","17:45-18:30 - Room: B - <br/> CONT4 - Household issues and inequality Discussant: Angela Paparusso","17:45-18:30 - Room: B - <br/> CONT4 - Household issues and inequality Discussant: Angela Paparusso","17:45-18:30 - Room: B - <br/> CONT4 - Household issues and inequality Discussant: Angela Paparusso","17:45-18:30 - Room: B - <br/> CONT4 - Household issues and inequality Discussant: Angela Paparusso","17:45-18:30 - Room: B - <br/> CONT4 - Household issues and inequality Discussant: Angela Paparusso","17:45-18:30 - Room: C - <br/> CONT5 - Advances in Bayesian theory Discussant: Catia Scricciolo","17:45-18:30 - Room: C - <br/> CONT5 - Advances in Bayesian theory Discussant: Catia Scricciolo","17:45-18:30 - Room: C - <br/> CONT5 - Advances in Bayesian theory Discussant: Catia Scricciolo","17:45-18:30 - Room: C - <br/> CONT5 - Advances in Bayesian theory Discussant: Catia Scricciolo","17:45-18:30 - Room: C - <br/> CONT5 - Advances in Bayesian theory Discussant: Catia Scricciolo"],["<b><\/b><\/br><i><\/i> ","<b><\/b><\/br><i><\/i> ","<b><\/b><\/br><i><\/i> ","<b>Point Process Learning: a cross-validation-based statistical framework for point processes<\/b><\/br><i>Julia Jansson, Christophe A.N. Biscio, Mehdi Moradi, Ottmar Cronie<\/i> <a href=\"https://drive.google.com/uc?id=14zgkVgjHPSWZowx10ZDPxta4cA4rKpqO&export=view\">View<\/a>","<b>Temporal Nearest Neighbor Gaussian Process (tNNGP) with flexible covariance for modelling physical activity<\/b><\/br><i>Marco Mingione, Pierfrancesco Alaimo Di Loro<\/i> <a href=\"https://drive.google.com/uc?id=16QHFVo4sxmclM5oyvXoGJsCcpTxTfw-e&export=view\">View<\/a>","<b>Spatio-temporal clustering of PM2.5 in northern Italy using a Bayesian model<\/b><\/br><i>FlorianWolf, Alessandro Carminati, Alessandra Guglielmi<\/i> <a href=\"https://drive.google.com/uc?id=15CIj7nyMgkAnxXJlGkGdvPkLv8razCx4&export=view\">View<\/a>","<b>Analysing language for preventing women from gender violence: NLP and Machine Learning techniques to classify Tweet messages<\/b><\/br><i>Fiorenza Deriu, Emilia La Nave<\/i> <a href=\"https://drive.google.com/uc?id=14DtwOZMtJz9ZzuSm4hRbLPEOE0u6_3i2&export=view\">View<\/a>","<b>How to alleviate spatial confounding in multivariate spatial areal models: an application to crimes against women in India<\/b><\/br><i>Tomás Goicoa, Arantxa Urdangarin, Thomas Kneib, María Dolores Ugarte<\/i> <a href=\"https://drive.google.com/uc?id=1505IhYQnobqwPhVPmPaCWxObjEX8IFDm&export=view\">View<\/a>","<b>A Pogit model for underreported counts of violence against women in Italy<\/b><\/br><i>Silvia Polettini, Sara Martino, Greta Panunzi<\/i> <a href=\"https://drive.google.com/uc?id=14B9OPUNdFlDFcEd-s_JOoxEB0wmEn99N&export=view\">View<\/a>","<b>Skill importance and labour market. An analysis based on Italian OJAs between 2019 and 2022<\/b><\/br><i>Francesca Adele Giambona, Adham Kahlawi<\/i> <a href=\"https://drive.google.com/uc?id=16_GlmKEvOBCAYgBls0xxaKV6TkiI21Y_&export=view\">View<\/a>","<b>The effect of the end of hiring incentives on job and employment security<\/b><\/br><i>Chiara Ardito, Fabio Berton, Lia Pacelli<\/i> <a href=\"https://drive.google.com/uc?id=168roF8hn9gCMZtRoGnqSlhGREbINGILs&export=view\">View<\/a>","<b>Young NEETs and their approach to the labour market in the post-global age<\/b><\/br><i>Giovanni De Luca, Antonella Rocca, Paolo Mazzocchi, Claudio Quintano<\/i> <a href=\"https://drive.google.com/uc?id=14zhyeJ7fAyZeSkxHbXjvXV3Ip1j4i6CL&export=view\">View<\/a>","<b>Content-based and data-driven integration. Markov chain models for the inspection of response dynamics in psychological testing<\/b><\/br><i>Andrea Bosco<\/i> <a href=\"https://drive.google.com/uc?id=16HXLGz-ZHiG_4zREi917iVWbfcJPpal6&export=view\">View<\/a>","<b>Integrating Rasch and compositional modeling for the analysis of social survey data<\/b><\/br><i>Antonio Calcagni<\/i> <a href=\"https://drive.google.com/uc?id=14hG9yn3C6s2j1ghm1XWp_Q8A4q3TLc85&export=view\">View<\/a>","<b>Artificial Neural Networks in psychometrics research<\/b><\/br><i>Monica Casella, Raffaella Esposito, Maria Luongo, Nicola Milano, Michela Ponticorvo, Roberta Simeoli, Davide Marocco<\/i> <a href=\"https://drive.google.com/uc?id=14HYZE6alrlHEmT2jpdmSQ0svbyYailIG&export=view\">View<\/a>","<b><\/b><\/br><i><\/i> ","<b>Measuring tail risk connectedness with spatial methods<\/b><\/br><i>Raffaele Mattera, Javier Sánchez García<\/i> <a href=\"https://drive.google.com/uc?id=15vEJp9pSJjrg0lAADE75C8DME-qHa63i&export=view\">View<\/a>","<b>Testing the impact of oil prices on the transport economic sector: evidence from random matrix theory<\/b><\/br><i>Laura Molero González, Antonio Jesús García Amate, Juan Evangelista Trinidad Segovia, Miguel Ángel Sánchez Granero<\/i> <a href=\"https://drive.google.com/uc?id=15xDoLHms36kHb21zy8-c6qMMLLDGRu6x&export=view\">View<\/a>","<b>MCMC approach for stock price forecasting using an Italian-BERT model<\/b><\/br><i>Domenico Santoro, Luca Grilli, Giacinto Angelo Sgarro, Francesco Colasanto, Giovanni Villani<\/i> <a href=\"https://drive.google.com/uc?id=14BgwxWv8mXUalIlHgcmT3JZFdXqYv0rz&export=view\">View<\/a>","<b>Transmission of shocks between crude oil prices, sector indices, and renewable and conventional energy indices<\/b><\/br><i>Monica W. Koczar, Francisco Jareño, Ana Escribano<\/i> <a href=\"https://drive.google.com/uc?id=13zlwLUxsPpgi5myXHLLQAIZUGKUwYHTD&export=view\">View<\/a>","<b>Spatio-temporal modelling of fires in Sicily<\/b><\/br><i>Nicoletta D'Angelo, Alessandro Albano, Andrea Gilardi, Giada Adelfio<\/i> <a href=\"https://drive.google.com/uc?id=16qnZqFQmWBOWpuvr103IYx_kG8F3UOdc&export=view\">View<\/a>","<b>Spatial varying graphical models for water pollutants<\/b><\/br><i>Rosaria Ignaccolo, Nicola Pronello, Alex Cucco, Luigi Ippoliti, Vito Frontuto, Natalia Golini<\/i> <a href=\"https://drive.google.com/uc?id=155FLFkuuqu0tyPos4E0Ik-xJeR-fS2aP&export=view\">View<\/a>","<b>Hidden semi-Markov models with copula-based emission distributions for toroidal time-series<\/b><\/br><i>Francesco Lagona, Marco Mingione<\/i> <a href=\"https://drive.google.com/uc?id=164nSLFc_LA6E4PjYG5sddKEaOivH4SvF&export=view\">View<\/a>","<b>Clustering dolphin signature whistles with Dirichlet process mixtures<\/b><\/br><i>Gianluca Mastrantonio, Giovanna Jona Lasinio, Petra Oswine Pammer, Giulia Pedrazzi, Daniela Silvia Pace, Maria Silvia Labriola<\/i> <a href=\"https://drive.google.com/uc?id=15JQtBvCaE8TaEFclc_ig63cwcTFk-vdj&export=view\">View<\/a>","<b>Diagnosis, treatment, and prevention of disease: gender or sex sensitive? Statistical considerations<\/b><\/br><i>Clelia di Serio, Paolo Ferrari<\/i> <a href=\"https://drive.google.com/uc?id=15urxtKQS61dwoOoMDXxbfvw2KfNNdtoV&export=view\">View<\/a>","<b>Addressing the gender pay gap: an application based on Object-Oriented Bayesian Networks to rethink gender composite indicators<\/b><\/br><i>Flaminia Musella, Lorenzo Giammei, Paola Vicard<\/i> <a href=\"https://drive.google.com/uc?id=15-Xk_N1LYWTPUSKNilreRKkTZVYl20XY&export=view\">View<\/a>","<b>Stratified Multilevel Graphical Models: a gender perspective in education<\/b><\/br><i>Federica Nicolussi, Chiara Masci<\/i> <a href=\"https://drive.google.com/uc?id=1540RpkYYXIiXztMtwfMpMz2ksubIvv4T&export=view\">View<\/a>","<b>Investigating gender gap in editorial boards of Finance journals: a social network perspective<\/b><\/br><i>Claudia Tarantola, Barbara Bedowska-Sójka, Codruta Mare, Alessia Paccagnini, Belma Öztürkkal, Galena Pisoni, Albulena Shala, Rezarta Perri, Hanna Kristín<\/i> <a href=\"https://drive.google.com/uc?id=15Vumt-JmesvFCPAQP5WhqyhtzQQhnfDb&export=view\">View<\/a>","<b>Aggregating judgments in non negotiable group decisions with external information in transport systems<\/b><\/br><i>Pietro Amenta, Antonio Lucadamo<\/i> <a href=\"https://drive.google.com/uc?id=15HedjC9P0hzdCt7Wz-NdbQyL7mKxwb1D&export=view\">View<\/a>","<b>Modeling train passenger movements for onboard zone-based load<\/b><\/br><i>Réemi Coulaud<\/i> <a href=\"https://drive.google.com/uc?id=171c92EDuOiPZnVA8yDtHSETo51gDk9xs&export=view\">View<\/a>","<b>Exploring urban mobility patterns in Lombardia through advanced analysis of mobile phone data<\/b><\/br><i>Selene Perazzini, Rodolfo Metulini<\/i> <a href=\"https://drive.google.com/uc?id=16OVjfwGBlNZcYorcaskJjKS1WyCWb_X4&export=view\">View<\/a>","<b>Improving aircraft passenger (dis-)comfort prediction via time series analysis of seat pressure data<\/b><\/br><i>Amalia Vanacore, Armando Ciardiello<\/i> <a href=\"https://drive.google.com/uc?id=14YCrdtUoHl_BE8N0XP9O-6ZGvz-llf_0&export=view\">View<\/a>","<b>Clustering multiple networks data with an application to the EU food trade market<\/b><\/br><i>Francesco Barile, Simón Lunagómez, Bernardo Nipoti<\/i> <a href=\"https://drive.google.com/uc?id=14VNqoKwLVjFcu3azqBTQEU9n0kPoHspb&export=view\">View<\/a>","<b>Bayesian nonparametrics mixtures for principal stratification<\/b><\/br><i>Antonio Canale<\/i> <a href=\"https://drive.google.com/uc?id=141p50S5sbNNlf-9Qbc69L0OJpYNK0Nx9&export=view\">View<\/a>","<b>How to leverage Bayesian mixtures for dynamic clustering and classification<\/b><\/br><i>Beatrice Franzolini<\/i> <a href=\"https://drive.google.com/uc?id=15C-4_ukqkRAuOZpE3DfHCDu7kgBfjuO8&export=view\">View<\/a>","<b>An application of the spatio-temporal stick-breaking process<\/b><\/br><i>Clara Grazian<\/i> <a href=\"https://drive.google.com/uc?id=167xocUQ4JPiXZHfc7UybYixCoN4vm-oy&export=view\">View<\/a>","<b>ChatGPT and conversational AI in customer satisfaction: a preliminary literature review<\/b><\/br><i>Elena Barzizza, Nicolò Biasetton, Luigi Salmaso<\/i> <a href=\"https://drive.google.com/uc?id=16T1Oj6UXm6wn4yVt4E3G4wQobRExW7SW&export=view\">View<\/a>","<b>Local and global economic policy uncertainty influence on US stock market volatility<\/b><\/br><i>Vincenzo Candila, Oguzhan Cepni, Giampiero M. Gallo, Rangan Gupta<\/i> <a href=\"https://drive.google.com/uc?id=16zxk0-R_qI9TF_UPIwQuwrlbhYZEm-mU&export=view\">View<\/a>","<b>Quantile treatment effect and GBM: an approach based on propensity score<\/b><\/br><i>Francesco Dotto, Francesco Giuli, Margherita  Scarlato, Francesco Bloise<\/i> <a href=\"https://drive.google.com/uc?id=16sVigFYJ46WSYfl_qTe_xzGGcI7bFB7U&export=view\">View<\/a>","<b>On the use of simulations in the construction of composite indexes<\/b><\/br><i>Giulio Grossi, Emilia Rocco<\/i> <a href=\"https://drive.google.com/uc?id=157MSQogFHflKftDfHPh46fLxGUWus9dG&export=view\">View<\/a>","<b>Forecasting Geneva’s donors and their charitable deductions<\/b><\/br><i>Marta Pittavino, Giedre Lideikyte-Huber<\/i> <a href=\"https://drive.google.com/uc?id=14oJBMVFG55ObUEWtLutqA6RmLEs3i1M4&export=view\">View<\/a>","<b>A modeling approach to investigate species-environment relationship in coral areas using in-situ observations<\/b><\/br><i>Crescenza Calculli, Diego Battagliese, Porzia Maiorano, Angela Carluccio, Gianfranco D'Onghia<\/i> <a href=\"https://drive.google.com/uc?id=15g07A1-73CsOLQhUZuZSTFQqrGOgKgUp&export=view\">View<\/a>","<b>A Markov-switching model for studying extreme temperatures in Friuli Venezia Giulia, Italy<\/b><\/br><i>Gioia Di Credico<\/i> <a href=\"https://drive.google.com/uc?id=16iFwwZIpYezKDn1SliZwfaokhiGwyjNL&export=view\">View<\/a>","<b>Penalised spatial quantile regression: application to air quality data<\/b><\/br><i>Marco Francesco De Sanctis, Ilenia Di Battista, Eleonora Arnone, Cristian Castiglione, Mauro Bernardi, Alessandro Palummo, Laura Sangalli<\/i> <a href=\"https://drive.google.com/uc?id=145DxSh2_zDdIbEwH0i1-odYDe2LhbRfw&export=view\">View<\/a>","<b>Statistical methods for evaluating the environmental sustainability of urban infrastructures<\/b><\/br><i>Andrea Gilardi, Francesca Ieva<\/i> <a href=\"https://drive.google.com/uc?id=16rknLxBdFVZnKEkgawYploHa0A3ueDYn&export=view\">View<\/a>","<b>A semi-parametric spatial-temporal dynamics for zero inflated Weibull distributions with application to extreme rainfall events<\/b><\/br><i>Paolo Onorati, Antonio Canale<\/i> <a href=\"https://drive.google.com/uc?id=16xwn0KUhY51ncluGVJduC6TGahONOOYl&export=view\">View<\/a>","<b>A two-step approach to analyze the inclusivity distribution in childcare services in Italy<\/b><\/br><i>Angela Andreella, Gaia Bertarelli, Federico Caldura, Stefano Campostrini<\/i> <a href=\"https://drive.google.com/uc?id=14C6eL95ndyqR-0PUA4_MpPtBSEV3_Zu4&export=view\">View<\/a>","<b>An age-adjusted disproportionality measure for pediatric pharmacovigilance<\/b><\/br><i>Pietro Belloni, Federica Pizzolato<\/i> <a href=\"https://drive.google.com/uc?id=14oJuUYs32g6gXc4C3sS109bWBSRtm-57&export=view\">View<\/a>","<b>Country prevalence and problematic gambling among European adolescents<\/b><\/br><i>Elisa Benedetti, Gabriele Lombardi, Rodolfo Cotichini, Sonia Cerrai, Marco Scalese, Sabrina Molinaro<\/i> <a href=\"https://drive.google.com/uc?id=14p39mAulyhYxAgyr4KE74Ft-OzqnDBlL&export=view\">View<\/a>","<b>War and the military service in post-communist bloc: which impact on marriage and divorce?<\/b><\/br><i>Sara Tafuro<\/i> <a href=\"https://drive.google.com/uc?id=15DwK0NovgXw_JHMQj4etXULNHdh4QwiD&export=view\">View<\/a>","<b>Non-intact families and children's vaccination coverage: evidence from Italy<\/b><\/br><i>Maria Veronica Dorgali, Raffaele Guetto, Valentina Tocchioni, Alice Dominici, Daniele Vignoli<\/i> <a href=\"https://drive.google.com/uc?id=16hOBp00Yx7NFZ0D7jHgVQZ4YkbOFqq4p&export=view\">View<\/a>","<b>The multifaced challenge to tackle energy poverty: outlook scenarios for EU countries<\/b><\/br><i>Alfonso Carfora, Scandurra Giuseppe<\/i> <a href=\"https://drive.google.com/uc?id=15B31JPF8pAgTEAoWYGDMRIdR0oX-OpLd&export=view\">View<\/a>","<b>Is total expenditure a valid proxy for income in statistical matching? A counterfactual experiment<\/b><\/br><i>Elena Dalla Chiara, Marcello D'Orazio, Federico Perali<\/i> <a href=\"https://drive.google.com/uc?id=15e0DNDJtXVd_NoyzQJz50Y7KeyJNzgtd&export=view\">View<\/a>","<b>Inequality in household consumption: A counterfactual analysis model for 'left-behind' subjects<\/b><\/br><i>Antonino Di Pino Incognito<\/i> <a href=\"https://drive.google.com/uc?id=15gqBUK6IbSf2nNBmWUbFIjewCbSXNNlh&export=view\">View<\/a>","<b>Examining socioeconomic inequalities in healthy working life expectancy and the association with smoking behaviour<\/b><\/br><i>Alessandro Feraldi, Christian Dudel<\/i> <a href=\"https://drive.google.com/uc?id=16a0IP-XRVIZ3Irt73lMXVxi9pJofcAbn&export=view\">View<\/a>","<b>Housing insecurity and first births in Italy<\/b><\/br><i>Alessandro Gallo, Daniele Vignoli<\/i> <a href=\"https://drive.google.com/uc?id=15XiMwXNQPghTqEZwj6-KURM_mBOKDUCR&export=view\">View<\/a>","<b>Uncertainty reduction in a class of dependent Dirichlet processes<\/b><\/br><i>Filippo Ascolani, Matteo Ruggiero, Stefano Damato<\/i> <a href=\"https://drive.google.com/uc?id=15kwiGbV0MY_SLz7nWpVEGlY0avUxfvGX&export=view\">View<\/a>","<b>Non-informative priors in Wright-Fisher smoothing<\/b><\/br><i>Filippo Ascolani, Ylenia Francesca Buttigliero, Matteo Ruggiero<\/i> <a href=\"https://drive.google.com/uc?id=14opqMBCzBx8KMWYtAmxvCm-UKzCFYuE1&export=view\">View<\/a>","<b>Oracle priors in Bayesian inference: a frequentist view<\/b><\/br><i>Stefano Rizzelli<\/i> <a href=\"https://drive.google.com/uc?id=15Y2ymSz66GCoBXZ7INMz4oFKRNOtGO9p&export=view\">View<\/a>","<b>Dependent infinite latent feature models for tree occurrence data<\/b><\/br><i>Federica Stolf<\/i> <a href=\"https://drive.google.com/uc?id=17-X_TeZxLUZFhqQfhftD9liqX56GPChQ&export=view\">View<\/a>","<b>Bayesian inference for discrete spatio-temporal hidden Markov models<\/b><\/br><i>Daniele Tancini, Riccardo Rastelli, Francesco  Bartolucci<\/i> <a href=\"https://drive.google.com/uc?id=14ToDP-1SqIgXbpxg6J3FISTkSlUWwNwv&export=view\">View<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>binfo<\/th>\n    <\/tr>\n   <\/thead>\n<\/table>","options":{"rowGroup":{"dataSrc":0},"columnDefs":[{"visible":false,"targets":0},{"name":"binfo","targets":0},{"name":"Click on the session name to collapse or expand","targets":1}],"pageLength":100,"dom":"ft","order":[],"autoWidth":false,"orderClasses":false},"callback":"function(table) {\ntable.on('click', 'tr.dtrg-group', function () {\n  var rowsCollapse = $(this).nextUntil('.dtrg-group');\n  $(rowsCollapse).toggleClass('hidden');\n});\ntable.one('init', () => $('.dtrg-group').trigger('click'))\n}"},"evals":["callback"],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="section" class="section level1 unnumbered">
+<h1 class="unnumbered"></h1>
+<p><a href="#top">Back to top</a></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
